@@ -81,3 +81,77 @@ body {
 .margin-below-bottom-xl {
   margin-bottom: 200px;
 }
+.btn-filebox {
+  color: #fff;
+  background-color: #286090;
+  border-color: #558fc2;
+}
+.btn-filebox:focus,
+.btn-filebox.focus {
+  color: #fff;
+  background-color: #2e6da4;
+  border-color: #337ab7;
+}
+.btn-filebox:hover {
+  color: #fff;
+  background-color: #2e6da4;
+  border-color: #406e96;
+}
+.btn-filebox:active,
+.btn-filebox.active,
+.open > .dropdown-toggle.btn-filebox {
+  color: #fff;
+  background-color: #286090;
+  border-color: #406e96;
+}
+.btn-filebox:active:hover,
+.btn-filebox.active:hover,
+.open > .dropdown-toggle.btn-filebox:hover,
+.btn-filebox:active:focus,
+.btn-filebox.active:focus,
+.open > .dropdown-toggle.btn-filebox:focus,
+.btn-filebox:active.focus,
+.btn-filebox.active.focus,
+.open > .dropdown-toggle.btn-filebox.focus {
+  color: #fff;
+  background-color: #406e96;
+  border-color: #558fc2;
+}
+.btn-filebox:active,
+.btn-filebox.active,
+.open > .dropdown-toggle.btn-filebox {
+  background-image: none;
+}
+.btn-filebox.disabled:hover,
+.btn-filebox[disabled]:hover,
+fieldset[disabled] .btn-filebox:hover,
+.btn-filebox.disabled:focus,
+.btn-filebox[disabled]:focus,
+fieldset[disabled] .btn-filebox:focus,
+.btn-filebox.disabled.focus,
+.btn-filebox[disabled].focus,
+fieldset[disabled] .btn-filebox.focus {
+  background-color: #2e6da4;
+  border-color: #337ab7;
+}
+.btn-filebox .badge {
+  color: #2e6da4;
+  background-color: #fff;
+}
+  
+  .col-filebox {
+  width: 50%;
+}
+.col-filebox {
+  float: left;
+}
+.col-filebox {
+  position: relative;
+  min-height: 1px;
+  padding-right: 5px;
+  padding-left: 5px;
+}
+.row-filebox {
+  margin-right: -5px;
+  margin-left: -5px;
+}

@@ -6,7 +6,10 @@
   <meta charset="utf-8">
 
   <!-- Connect to Bootstrap CSS -->
-  <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css"> -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+
+  <!-- Connect to Bootstrap Social -->
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-social.css">
 
   <!-- Connect to Font Awesome CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
@@ -26,8 +29,265 @@
 
   <!-- Connect to Google Web Fonts -->
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,300italic,400italic,600italic,700italic,800,800italic' rel='stylesheet' type='text/css'>
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <style>
+  .hr-text {
+      display: block;
+      text-align: center;
+      overflow: hidden;
+      white-space: nowrap;
+      padding-bottom: 10.5px;
+      padding-top: 10.5px;
+  }
+
+  .hr-text > span {
+      position: relative;
+      display: inline-block;
+  }
+
+  .hr-text > span:before,
+  .hr-text > span:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      width: 9999px;
+      height: 0.5px;
+      background: gray;
+      opacity: 0.2;
+  }
+
+  .hr-text > span:before {
+      right: 100%;
+      margin-right: 15px;
+  }
+
+  .hr-text > span:after {
+      left: 100%;
+      margin-left: 15px;
+  }
+
+</style>
 </head>
 <body>
-  <h1>Good luck!</h1>
+  <nav class="navbar navbar-default navbar-fixed-top">
+   <div class="container">
+     <div class="row">
+       <div class="col-lg-10 col-lg-offset-1">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+             <span class="sr-only">Toggle navigation</span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+           </button>
+           <a class="navbar-brand" href="#">
+             <i class="fa fa-lg fa-fw fa-dropbox"></i>
+             Filebox
+           </a>
+         </div>
+         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+           <ul class="nav navbar-nav navbar-right">
+             <li>
+               <p class="navbar-btn">
+                 <a href="#" class="btn btn-link">
+                   Download the app
+                 </a>
+               </p>
+             </li>
+             <li>
+               <p class="navbar-btn">
+                 <a href="#" class="btn btn-link">
+                   Sign in
+                 </a>
+               </p>
+             </li>
+
+             <li>
+               <p class="navbar-btn">
+                 <a href="#" class="btn btn-default">
+                   Try Filebox Business
+                 </a>
+               </p>
+             </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </div>
+ </nav>
+ <div class="container padding-inside-top-md padding-inside-bottom-md">
+   <div class="row">
+         <div class="col-lg-offset-1 col-lg-10">
+         <img src="assets/images/hero.png" class="img-responsive"></div>
+     </div>
+     <div class="row">
+         <div class="col-lg-offset-1 col-lg-4">
+         <h1>Filebox works the way you do</h1>
+         <p>Get to all your files from anywhere, on any device, and share them with anyone.</p>
+         </div>
+         <div class="col-lg-offset-2 col-lg-4">
+           <form class="margin-above-top-sm">
+            <div class="form-group"> <label for="exampleInputName" class="sr-only">
+                            Full Name
+                          </label><input type="email" id="exampleInputName" class="form-control" placeholder="Full name"> </div>
+            <div class="row-filebox">
+            <div class="form-group col-filebox"> <label for="exampleInputEmail" class="sr-only">
+                            Email
+                          </label><input type="email" id="exampleInputEmail" class="form-control" placeholder="Email"> </div>
+            <div class="form-group col-filebox">              <label for="exampleInputPassword" class="sr-only">
+                            Password
+                          </label> <input autocomplete="off" type="password" id="exampleInputPassword" class="form-control" placeholder="Password"> </div></div>
+            <div class="checkbox"> <label> <input type="checkbox">I agree to <a href="#">Filebox terms</a> </label> </div>
+            <button type="submit" class="btn btn-filebox btn-block">Sign up for free</button> </form>
+            <div class="hr-text">
+              <span>or</span>
+            </div>
+            <a class="btn btn-block btn-social btn-google">
+              <span class="fa fa-google"></span>Sign up free with Google</a>
+            <form class="margin-above-top-sm">
+         </div>
+     </div>
+     <div class="row padding-inside-top-lg">
+         <div class="col-lg-offset-1 col-lg-4"> <h2>Take your docs anywhere</h2>
+          <p>Save files on your computer, then access them on your phone from the road. Everything you keep in Filebox is synced automatically to all your devices.</p></div>
+         <div class="col-lg-offset-2 col-lg-4">
+         <img src="assets/images/docs-anywhere.png" class="img-responsive"></div>
+     </div>
+     <div class="row padding-inside-top-lg">
+         <div class="col-lg-offset-1 col-lg-4"><img src="assets/images/send-videos-quickly.png" class="img-responsive"></div>
+         <div class="col-lg-offset-2 col-lg-4"> <h2>Send videos quickly</h2>
+          <p>Send your entire wedding video to family with a simple link. It’s easy to share large files with anyone — even if they don’t have a Filebox account.</p></div>
+     </div>
+     <div class="row padding-inside-top-lg">
+         <div class="col-lg-offset-1 col-lg-4"> <h2>Keep your photos safe</h2>
+          <p>Back up vacation photos automatically from your phone or computer. That way, memories are safe as soon as you make them, and you can relive them from any device.</p></div>
+         <div class="col-lg-offset-2 col-lg-4"><img src="assets/images/keep-your-photos-safe.png" class="img-responsive"></div>
+     </div>
+     <div class="row padding-inside-top-lg">
+         <div class="col-lg-offset-1 col-lg-4"><img src="assets/images/work-on-slides-together.png" class="img-responsive"></div>
+         <div class="col-lg-offset-2 col-lg-4"> <h2>Work on slides together</h2>
+          <p>Edit a presentation with teammates without emailing files back and forth. When you edit a file in a shared folder, everyone gets the update automatically.</p></div>
+     </div>
+     <div class="row padding-inside-top-lg">
+         <div class="col-lg-offset-1 col-lg-4"><h2>Never lose a file again</h2>
+          <p>Left your phone on the train? Your photos, docs, and videos are safe. Just sign in to Filebox from any device, and your files will be there waiting for you.</p></div>
+         <div class="col-lg-offset-2 col-lg-4"><img src="assets/images/never-lose-a-file-again.png" class="img-responsive"></div>
+     </div>
+   <div class="row padding-inside-top-lg padding-inside-bottom-lg">
+       <div class="col-lg-4 col-lg-offset-4">
+         <h2 class="text-center">
+            Get started now
+          </h2>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputFullName2" class="sr-only">
+                Full name
+              </label>
+              <input type="text" class="form-control" id="exampleInputFullName2" placeholder="Full name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail2" class="sr-only">
+                Email
+              </label>
+              <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword2" class="sr-only">
+                Password
+              </label>
+              <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> I agree to <a href="#">Filebox terms</a>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-filebox btn-block">
+              Sign up for free
+            </button></form>
+            <div class="hr-text">
+              <span>or</span>
+            </div>
+            <a class="btn btn-block btn-social btn-google">
+              <span class="fa fa-google"></span>Sign up free with Google</a>
+            <form class="margin-above-top-sm"></div>
+            </div>
+          </div>
+<div style="background-color:#f6f9fc">
+<div class="container padding-inside-bottom-lg padding-inside-top-md clearfix">
+  <div class="col-md-2">
+    <h4>Filebox</h4>
+    <ul class="list-unstyled">
+      <li>Desktop app</li>
+      <li>Mobile apps</li>
+      <li>Plans</li>
+      <li>Security</li>
+    </ul>
+  </div>
+  <div class="col-md-2">
+    <h4>Company</h4>
+    <ul class="list-unstyled">
+      <li>About us</li>
+      <li>Jobs</li>
+      <li>Press</li>
+      <li>Blog</li>
+    </ul>
+  </div>
+  <div class="col-md-2">
+    <h4>Support</h4>
+    <ul class="list-unstyled">
+      <li>Help Center</li>
+      <li>Get started</li>
+      <li>Contact</li>
+      <li>Privacy &amp; terms</li>
+    </ul>
+  </div>
+  <div class="col-md-2">
+    <h4>Community</h4>
+    <ul class="list-unstyled">
+        <li>Developers</li>
+        <li>Referrals</li>
+        <li>Forum</li>
+      </ul>
+    </div>
+
+    <div class="col-md-2">
+      <h4>Connect</h4>
+
+      <ul class="list-unstyled">
+        <li>Twitter</li>
+        <li>Facebook</li>
+        <li>Google+</li>
+        <li>YouTube</li>
+      </ul>
+    </div>
+
+    <div class="col-md-2">
+      <h4>Products</h4>
+
+      <ul class="list-unstyled">
+        <li>Pro</li>
+        <li>Business</li>
+        <li>Enterprise</li>
+      </ul>
+    </div>
+ </div>
 </body>
 </html>
